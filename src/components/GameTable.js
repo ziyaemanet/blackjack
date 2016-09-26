@@ -78,11 +78,14 @@ export default class GameTable extends Component{
         <div id="table-inner">
           <Dealer dealerCards={dealerCards} dealerCount={dealerCount} stand={stand} play={play}/>
           <Player playerCards={playerCards} playerCount={playerCount}/>
-
-          <div>{message}</div>
-          <button className="btn btn-default" disabled={play} onClick={this.newGame}>New Game</button>
-          <button className="btn btn-info" disabled={!play || stand} onClick={this.hit}>Hit</button>
-          <button className="btn btn-warning" disabled={!play} onClick={this.stand}>Stand</button>
+          <div id="interaction" className="text-center">
+            <hr/>
+            <div id="message">{message}</div>
+            <hr/>
+            <button className="btn btn-default" disabled={play} onClick={this.newGame}>New Game</button>
+            <button className="btn btn-info" disabled={!play || stand} onClick={this.hit}>Hit</button>
+            <button className="btn btn-warning" disabled={!play} onClick={this.stand}>Stand</button>
+          </div>
         </div>
       </div>
     )

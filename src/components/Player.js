@@ -1,15 +1,17 @@
 import React from 'react';
-//const uuid = require('uuid');
+import uuid from 'uuid';
 
 const Player = props => {
   const {playerCount,playerCards} = props;
 
   return (
-    <div>
-      <h4>Your Hand: {playerCount}</h4>
-      <div style={{"fontSize":"50pt"}}>
+    <div className="card-holder">
+      <h4 className="text-center">Your Hand: {playerCount}</h4>
+      <div className="text-center" style={{"fontSize":"70pt"}}>
         {playerCards.map(card =>(
-          card.display
+          <span key={uuid()} className="card-wrapper"><span key={uuid()} className="card"
+                style={{"color": ((card.suit == 'H') || (card.suit == 'D')) ? "red" : "black"}}>
+          {card.display}</span></span>
         ))}
       </div>
     </div>

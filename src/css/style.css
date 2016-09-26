@@ -16,3 +16,42 @@
   margin: 0 auto;
   background-color: #2d862d;
 }
+
+.card-holder{
+  margin: 0 auto;
+}
+
+#message{
+  color: white;
+}
+
+#interaction{
+
+}
+
+h4{
+  color: White;
+}
+
+hr{
+  color: White;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+.card{
+  background-color: white;
+  top: -31px;
+  left: -2px;
+  position: relative;
+}
+
+.card-wrapper{
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  padding: -10px;
+  width: 60px;
+  height: 79px;
+  border-radius: 5px;
+}
