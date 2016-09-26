@@ -1,0 +1,18 @@
+#floor{
+  background: url("http://i.imgur.com/mIVJYis.jpg");
+  background-size: 1500px 1000px;
+  height:1000px;
+}
+
+#title{
+  color:white;
+}
+
+#table{
+  width:900px;
+  height:500px;
+  border: 30px solid #ac7339;
+  border-radius: 50px;
+  margin: 0 auto;
+  background-color: #2d862d;
+}
